@@ -37,7 +37,7 @@ class AuthController extends Controller
 
         return $this->successResponse([
             'user' => UserResource::make(Auth::user()),
-            'token'=> $tokengit
+            'token'=> $token
         ]);
     }
 
